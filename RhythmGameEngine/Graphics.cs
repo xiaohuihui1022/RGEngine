@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace RGEngine.Graphics
 {
-    public class Windoors
+    /// <summary>
+    /// 主窗口渲染层面
+    /// </summary>
+    public class Render
     {
+        public void Render4K()
+        {
 
+        }
     }
 }
