@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RGEngine.Graphics;
 
 namespace Phigreno
 {
@@ -15,6 +16,12 @@ namespace Phigreno
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form form = new GameForm();
+            form.Show();
         }
     }
 }
