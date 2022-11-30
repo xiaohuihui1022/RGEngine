@@ -14,6 +14,7 @@ namespace RGEngine.Key
         Panel boxes;
         PictureBox line;
         Label plable;
+        Render ren;
         /// <summary>
         /// 初始化函数
         /// </summary>
@@ -26,7 +27,7 @@ namespace RGEngine.Key
             boxes = render.pdpanel;
             line = singleLine;
             plable = pdlabel;
-            Console.WriteLine(boxes);
+            ren = render;
         }
 
         /// <summary>
@@ -47,8 +48,7 @@ namespace RGEngine.Key
                     {
                         plable.ForeColor = Color.Gold;
                         plable.Text = "Perfect";
-                        pb.Image = null;
-                        pb.BackColor = Color.Transparent;
+                        ren.pdpanel.Controls.Remove(pb);
                         break;
                     }
                     else

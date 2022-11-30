@@ -43,6 +43,8 @@ namespace Phigreno
             else
             {
                 renderPressed = true;
+                NDown = new Thread(render.NoteDown);
+                NDown.Start();
             }
         }
 
