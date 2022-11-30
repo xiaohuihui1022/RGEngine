@@ -121,7 +121,7 @@
   <data name="pdline.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAVoAAAHsCAYAAACTwmUeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAApkSURBVHhe7dmxDQJBEATByz8MovssHmzUxiMNXq1UzgTQ
+        YQUAAAAJcEhZcwAACwwAAAsMAT9AIsgAAApkSURBVHhe7dmxDQJBEATByz8MovssHmzUxiMNXq1UzgTQ
         zp7zum4A/ihHAHZyBGAnRwB2cgRgJ0cAdmr83AHgd9VUoQUYqqYKLcBQNVVoAYaqqUILMFRNFVqAoWqq
         0AIMVVOFFmComiq0AEPVVKEFGKqmCi3AUDVVaAGGqqlCCzBUTRVagKFqqtACDFVThRZgqJoqtABD1VSh
         BRiqpgotwFA1VWgBhqqpQgswVE0VWoChaqrQAgxVU4UWYKiaKrQAQ9VUoQUYqqYKLcBQNVVoAYaqqUIL
@@ -167,6 +167,18 @@
         VWgBhqqpQgswVE0VWoChaqrQAgxVU4UWYKiaKrQAQ9VUoQUYqqYKLcBQNVVoAYaqqUILMFRNFVqAoWqq
         0AIMVVOFFmComiq0AEPVVKEFGKqmCi3AUDW1RwB2cgRgJ0cAdnIEYCdHAEau+w19g1cYjJpGOwAAAABJ
         RU5ErkJggg==
+</value>
+  </data>
+  <data name="pdsingle.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAnYAAABGCAYAAABBsdl9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAFgSURBVHhe7dsxEcAwAMSw8IdRdGWREjCB72nQYg4+914A
+        AH4gIwAAezICALAnIwAAezICALAnIwAAezICALAnIwAAezICALAnIwAAezICALAnIwAAezICALAnIwAA
+        ezICALAnIwAAezICALAnIwAAezICALAnIwAAezICALAnIwAAezICALAnIwAAezICALDnnOe9AAD8QEYA
+        APZkBABgT0YAAPZkBABgTx0VAADsyQgAwJ6MAADsyQgAwJ6MAADsyQgAwJ6MAADsyQgAwJ6MAADsyQgA
+        wJ6MAADsyQgAwJ6MAADsyQgAwJ6MAADsyQgAwJ6MAADsyQgAwJ6MAADsyQgAwJ6MAADsyQgAwJ6MAADs
+        yQgAwJ6MAADsyQgAwJ6MAADsyQgAwJ6MAADsyQgAwJ6MAADsyQgAwJ6MAADsyQgAwJ6MAADsyQgAwJ6M
+        AADsyQgAwJ6MAADsyQgAwJp7Pse4UbAX3uIcAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

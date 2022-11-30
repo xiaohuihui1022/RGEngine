@@ -50,6 +50,13 @@ namespace RGEngine.Dev
                     throw new FileNotFoundException("所选文件不存在");
                 _device = new WaveOutEvent(); // Create device
                 _reader = new AudioFileReader(fileName); // Create reader
+
+                // dsp start
+                _volumeProvider = new VolumeSampleProvider(_reader)
+                {
+                    Volume = 100f
+                };
+
                 _device.Init(_volumeProvider);
                 //_device.Init(_reader); // 之前是reader，现改为VolumeSampleProvider
                 // https://stackoverflow.com/questions/46433790/how-to-chain-together-multiple-naudio-isampleprovider-effects
@@ -83,9 +90,17 @@ namespace RGEngine.Dev
                 {
                     if (_device.PlaybackState == PlaybackState.Playing)
                     {
-                        // 若为播放状态，持续更新界面
-                        invokedForm.BeginInvoke(new Action(UpdateProgress));
                         Thread.Sleep(100);
+                        // 若为播放状态，持续更新界面
+                        try
+                        {
+                            invokedForm.BeginInvoke(new Action(UpdateProgress));
+                        }
+                        catch (Exception e)
+                        {
+                            continue;
+                        }
+                        
                     }
                     else
                     {
@@ -98,8 +113,8 @@ namespace RGEngine.Dev
         public void StopAction()
         {
             _device?.Stop();
-            if (_reader != null) _reader.Position = 0;
-            UpdateProgress();
+            // if (_reader != null) _reader.Position = 0;
+            // UpdateProgress();
         }
 
         public void PlayAction()
@@ -115,7 +130,7 @@ namespace RGEngine.Dev
         public void UpdateProgress()
         {
             var currentTime = _reader?.CurrentTime ?? TimeSpan.Zero; // 当前时间
-            Console.WriteLine(currentTime);
+            // Console.WriteLine(currentTime);
 
             if (!_sliderLock)
             {
