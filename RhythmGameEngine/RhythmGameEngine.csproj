@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chart.cs" />
     <Compile Include="Dev\NAPlayer.cs" />
     <Compile Include="Graphics.cs" />
     <Compile Include="KeyCheck.cs" />

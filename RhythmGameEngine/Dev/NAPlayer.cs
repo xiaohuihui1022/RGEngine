@@ -10,6 +10,8 @@ namespace RGEngine.Dev
 {
     public class NAPlayer
     {
+        public double SoundProgress;
+
         private IWavePlayer _device;
 
         private ProgressBar progress;
@@ -96,7 +98,7 @@ namespace RGEngine.Dev
                         {
                             invokedForm.BeginInvoke(new Action(UpdateProgress));
                         }
-                        catch (Exception e)
+                        catch
                         {
                             continue;
                         }
@@ -131,11 +133,13 @@ namespace RGEngine.Dev
         {
             var currentTime = _reader?.CurrentTime ?? TimeSpan.Zero; // 当前时间
             // Console.WriteLine(currentTime);
-
+            
             if (!_sliderLock)
             {
                 progress.Value = (int)currentTime.TotalMilliseconds;
+                SoundProgress = currentTime.TotalMilliseconds;
             }
+            
         }
 
 

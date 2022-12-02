@@ -8,7 +8,7 @@ using RGEngine.Dev;
 
 namespace RGEngine.Sound
 {
-    public class Sound
+    public class RGSound
     {
         NAPlayer auplayer = new NAPlayer();
 
@@ -53,6 +53,15 @@ namespace RGEngine.Sound
         public void SoundDispose()
         {
             auplayer.DisposeAll();
+        }
+
+        /// <summary>
+        /// 获取sound进度
+        /// </summary>
+        /// <returns>进度(double)</returns>
+        public double GetSoundProgress()
+        {
+            return 0.0;
         }
     }
 }
