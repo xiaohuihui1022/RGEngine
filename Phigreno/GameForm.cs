@@ -27,17 +27,19 @@ namespace Phigreno
             CheckForIllegalCrossThreadCalls = false;
             InitializeComponent();
             sound.SoundLoad(".\\sound\\Homebound.mp3", musicpro, this);
-            
             key.Init(render, pdsingle, panding);
         }
 
 
         // render
         private void button1_Click(object sender, EventArgs e)
-        { 
+        {
             render.Init(this, @".\res\note.png", pdcircle, 64, 25);
             render.RenderNote();
             key.Init(render, pdsingle, panding);
+            cloader.Init(render, sound);
+            cloader.WriteChartJson();
+            cloader.WriteChartFile(@".\chart\awa.json");
             if (renderPressed)
             {
                 NDown = new Thread(render.NoteDown);
